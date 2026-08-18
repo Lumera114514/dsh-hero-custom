@@ -1,0 +1,45 @@
+{
+  "name": "dsh-hero-custom",
+  "version": "1.0.0",
+  "description": "DSH 主界面标题自定义：修改「探索未至之境预览版」文字，支持位置 / 大小 / 颜色 / 光效 / 特效 / 字体与鲸鱼图标，设置页实时预览",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ui",
+    "customize",
+    "hero"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "author": "lumeraqaq",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lumera114514/dsh-hero-custom.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

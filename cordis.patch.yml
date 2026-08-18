@@ -1,0 +1,7 @@
+# dsh-hero-custom bundle patch: registers the dual-face plugin row.
+# The node half (exports ".") runs in the host process and persists settings
+# to $DSH_HOME/hero-custom.settings.json; the `dsh.client` declaration in
+# package.json makes the browser half (exports "./client") load in the web GUI.
+- insert:
+    - id: hero-custom
+      name: 'dsh-hero-custom'

@@ -1,6 +1,6 @@
 {
   "name": "dsh-hero-custom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSH 主界面标题自定义：修改「探索未至之境预览版」文字，支持位置 / 大小 / 颜色 / 光效 / 特效 / 字体与鲸鱼图标，设置页实时预览",
   "keywords": [
     "dsh",
